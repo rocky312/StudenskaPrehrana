@@ -1,7 +1,7 @@
 <?php
     $server = "localhost";
-    $user = "admin";
-    $pass = "admin";
+    $user = "student";
+    $pass = "student123";
     $baza = "studentska_prehrana";
     
     $link = mysqli_connect($server, $user, $pass, $baza); 
