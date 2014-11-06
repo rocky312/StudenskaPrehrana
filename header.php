@@ -14,6 +14,9 @@
      <script src="js/sForm.js"></script>
      <script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
      <script src="js/tms-0.4.1.js"></script>
+     <link href="css/style_login.css" rel='stylesheet' type='text/css' />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600,700' rel='stylesheet' type='text/css'>
      <script>
       $(window).load(function(){
       $('.slider')._TMS({
@@ -54,10 +57,16 @@ height: 'auto',
     }); 
     
     $(document).ready(function(){
+        $("#loginPage").css("display", "none");
         $("#button_login").click(function(){
             var height = $(window).height();
             $("#loginPage").css("height", height);
             $("#loginPage").css("margin-top", -height);
+            $("#loginPage").css("display", "block");
+            $(".line").css("display", "none");
+            $(".login-form form input").val("");
+            $(".submit input").val("Prijava");
+        
             $("#loginPage").animate({
             marginTop:'0px'
           }, "slow", function(){
@@ -87,8 +96,25 @@ height: 'auto',
     <![endif]-->
      </head>
      <body>
+         <div class="line"></div>
          <div id="loginPage">
              
+             <div class="main2">
+                 <div class="login-form">
+                     <h1>Prijava</h1>
+                     <div class="head">
+                         <img src="images/user.png" alt=""/>
+                     </div>
+                     <form>
+                         <input type="text" placeholder="Uporabniško ime">
+                         <input type="text" placeholder="Geslo">
+                         <div class="submit">
+                             <input type="submit" onclick="myFunction()" value="Prijava" >
+                         </div>	
+                         <p><a href="#">Pozabljeno geslo ?</a></p>
+                     </form>
+                 </div>
+             </div>	
          </div>
          <div id="container123123">
        <div class="main">
