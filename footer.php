@@ -9,5 +9,6 @@
     <div class="clear"></div>
   </div>
 </footer>
+</div>
 </body>
 </html>
