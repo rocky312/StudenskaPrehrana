@@ -47,10 +47,10 @@ body{
     -moz-border-radius:50%;
     border:6px solid rgba(221, 218, 215, 0.23);
 }
-.main{
+.main2{
     position:relative;
 }
-.main h1{
+.main2 h1{
     font-size:25px;
     color:#676767;
     font-family: 'Open Sans', sans-serif;
@@ -58,15 +58,15 @@ body{
     padding-top: 19%;
     text-align: center;
 }
-.main form {
+.main2 form {
     width: 80%;
     margin: 0 auto;
     padding: 6% 0 9% 0;
 }
-.main p {
+.main2 p {
     text-align: center;
 }
-.main form p a {
+.main2 form p a {
     color: #888;
     font-family: 'Open Sans', sans-serif;
 }
@@ -159,7 +159,7 @@ input[type="submit"]:hover{
         width:30%;
         margin: 11% auto 4% auto;
     }
-    .main h1 {
+    .main2 h1 {
         padding-top: 23%;
     }
     .copy-right {
@@ -221,7 +221,7 @@ input[type="submit"]:hover{
         left:30%;
         bottom:-17%;
     }
-    .main h1 {
+    .main2 h1 {
         font-size: 22px;
     }
     .head img {
@@ -240,7 +240,7 @@ input[type="submit"]:hover{
             margin:20% auto 0;
             width: 85%;
         }
-        .main h1 {
+        .main2 h1 {
             padding-top: 20%;
             font-size: 20px;
         }
@@ -256,7 +256,7 @@ input[type="submit"]:hover{
             font-weight:600;
             font-size: 15px;
         }
-        .main form p a {
+        .main2 form p a {
             font-size: 15px;
         }
         input[type="submit"] {
