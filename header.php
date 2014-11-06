@@ -69,7 +69,7 @@ height: 'auto',
         
             $("#loginPage").animate({
             marginTop:'0px'
-          }, "slow", function(){
+          }, 1000, function(){
               $("#container123123").hide();
           });
 
