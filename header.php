@@ -51,7 +51,26 @@ height: 'auto',
     swipe: {onMouse: false, onTouch: false}});
     
     
-    });      
+    }); 
+    
+    $(document).ready(function(){
+        $("#button_login").click(function(){
+            var height = $(window).height();
+            $("#loginPage").css("height", height);
+            $("#loginPage").css("margin-top", -height);
+            $("#loginPage").animate({
+            marginTop:'0px'
+          }, "slow", function(){
+              $("#container123123").hide();
+          });
+
+          
+          $('html, body').css({
+                'overflow': 'hidden',
+                'height': '100%'
+            })
+        });
+      }); 
 
      </script>
      <!--[if lt IE 8]>
@@ -68,9 +87,16 @@ height: 'auto',
     <![endif]-->
      </head>
      <body>
+         <div id="loginPage">
+             
+         </div>
+         <div id="container123123">
        <div class="main">
 <!--==============================header=================================-->
- <header> 
+
+    
+
+<header> 
   <div class="container_12">
     <div class="grid_12">
     <h1><a href="index.html"><img src="images/logo.png" alt="EXTERIOR"></a> </h1>
@@ -81,7 +107,7 @@ height: 'auto',
                    <li class="current"><a href="#">Domov</a></li>
                    <li><a href="#">Restavracije</a></li>
                    <li><a href="#">O Nas</a></li>
-                   <li><a href="#">Prijava </a></li>
+                   <li><a href="#" id="button_login">Prijava </a></li>
                    <li><a href="#">Registracija</a></li>
                  </ul>
               </nav>
